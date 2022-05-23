@@ -8,7 +8,7 @@ Create class `Animal` which constructor takes three arguments:
 * `is_hungry` - boolean that shows if animal is ready to eat with `True` default value.
 
 `Animal` should have two methods:
-* `print_name` - should print name in the following format: `Hello, my name is {name}`
+* `print_name` - should print name in the following format: `Hello, I'm {name}`
 * `feed` - should print `Eating {appetite} food points...`, 
 set `is_hungry` to `False` and return number of eaten food points if animal is hungry.
 Otherwise, it should return 0.
@@ -77,5 +77,5 @@ Example:
 cat = Cat("Cat", False)
 lion = Animal("Lion", 25, True)
 dog = Dog("Dog")
-feed_animals([cat, lion, dog]) == 28
+feed_animals([cat, lion, dog]) == 32
 ```
