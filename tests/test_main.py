@@ -85,6 +85,21 @@ def test_animal_feed_method(name, appetite, output):
     assert f.getvalue() == output
 
 
+def test_animal_feed_not_hungry_animal():
+    lion = main.Animal(name="Alex", appetite=25, is_hungry=False)
+
+    f = io.StringIO()
+    with redirect_stdout(f):
+        feed_points = lion.feed()
+
+    assert f.getvalue() == "", (
+        "Method 'feed' should not print anything for non-hungry animal."
+    )
+    assert feed_points == 0, (
+        "Method 'feed' should return 0 for non-hungry animal."
+    )
+
+
 @pytest.mark.parametrize(
     "name,output",
     [
@@ -180,3 +195,14 @@ def test_dog_bring_slippers_method():
 )
 def test_feed_animals_function(animals, total_food_points):
     assert main.feed_animals(animals) == total_food_points
+
+
+def test_feed_animals_should_feed_animal():
+    cat = main.Cat("Tom", is_hungry=True)
+    lion = main.Animal("Lion", appetite=25, is_hungry=True)
+    dog = main.Dog("Dog", is_hungry=True)
+    main.feed_animals([cat, lion, dog])
+
+    assert all(map(lambda x: x.is_hungry is False, [cat, lion, dog])), (
+        "Function `feed_animals` should feed all hungry animals."
+    )

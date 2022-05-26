@@ -11,7 +11,7 @@ Create class `Animal` which constructor takes three arguments:
 * `print_name` - should print name in the following format: `Hello, I'm {name}`
 * `feed` - should print `Eating {appetite} food points...`, 
 set `is_hungry` to `False` and return number of eaten food points if animal is hungry.
-Otherwise, it should return 0.
+Otherwise, it should return 0 and print nothing.
 
 Example:
 ```python
@@ -68,8 +68,8 @@ dog2.bring_slippers()  # "The slippers delivered!"
 ```
 
 Now, it's time to feed many animals at a time.
-Implement `feed_animals` function which takes a list of animals 
-and should return a sum of food points that is needed to feed all hungry
+Implement `feed_animals` function which takes a list of animals. 
+It should feed passed animals and return a sum of food points that are needed to feed all hungry
 animals from this list.
 
 Example:
