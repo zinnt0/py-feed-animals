@@ -203,6 +203,6 @@ def test_feed_animals_should_feed_animal():
     dog = main.Dog("Dog", is_hungry=True)
     main.feed_animals([cat, lion, dog])
 
-    assert all(map(lambda x: x.is_hungry is False, [cat, lion, dog])), (
+    assert all([not animal.is_hungry for animal in [cat, lion, dog]]), (
         "Function `feed_animals` should feed all hungry animals."
     )
