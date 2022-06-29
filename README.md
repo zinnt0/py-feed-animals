@@ -1,6 +1,7 @@
 # Feed animals
 
 - Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before start
+
 All animals love delicious food. Let's create a new class to feed them.
 Create class `Animal` which constructor takes three arguments:
 * `name` - the animal name
