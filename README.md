@@ -81,3 +81,5 @@ lion = Animal("Lion", 25, True)
 dog = Dog("Dog")
 feed_animals([cat, lion, dog]) == 32
 ```
+
+### Note: Check your code using this [checklist](checklist.md) before pushing your solution.
