@@ -7,7 +7,7 @@ Good example:
 
 ```python
 if self.is_hungry:
-	return "Is hungry!"
+    return "Is hungry!"
 return "Is not hungry!"
 ```
 
@@ -15,9 +15,9 @@ Bad example:
 
 ```python
 if self.is_hungry:
-	return "Is hungry!"
+    return "Is hungry!"
 else:
-return "Is not hungry!"
+    return "Is not hungry!"
 ```
 
 2. Use a `@staticmethod` for some functions.
@@ -47,8 +47,8 @@ Good example:
 
 ```python
 my_dict = {
-"greeting": "Good morning, have a nice day!", 
-	"answer": "Good morning, thanks!"
+    "greeting": "Good morning, have a nice day!", 
+    "answer": "Good morning, thanks!"
 }
 
 ```
@@ -57,14 +57,14 @@ Also a good example:
 
 ```python
 my_dict = {"greeting": "Good morning, have a nice day!", 
-	      "answer": "Good morning, thanks!"}
+	   "answer": "Good morning, thanks!"}
 ```
 
 Bad example:
 
 ```python
 my_dict = {"greeting": "Good morning, have a nice day!", 
-	      "answer": "Good morning, thanks!"
+	   "answer": "Good morning, thanks!"
 }
 ```
 
