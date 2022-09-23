@@ -1,6 +1,7 @@
 # Feed animals
 
-- Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before start
+**Please note:** read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md)
+before starting.
 
 All animals love delicious food. Let's create a new class to feed them.
 Create class `Animal` which constructor takes three arguments:
@@ -80,3 +81,5 @@ lion = Animal("Lion", 25, True)
 dog = Dog("Dog")
 feed_animals([cat, lion, dog]) == 32
 ```
+
+### Note: Check your code using this [checklist](checklist.md) before pushing your solution.
