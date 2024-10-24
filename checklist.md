@@ -1,4 +1,6 @@
 # Сheck Your Code Against the Following Points
+___
+
 ## Make Code Easier
 
 1. Don't use an extra `else` statement.
@@ -20,8 +22,23 @@ else:
     return "Is not hungry!"
 ```
 
-2. Use a `@staticmethod` for some functions.
-3. Don't use a `for` loop if you can use a list comprehension.
+2. Don't use a `for` loop if you can use or generator expression.
+
+Good example:
+
+```python
+return sum(item.process() for item in collection)
+```
+
+Bad example:
+
+```python
+total = 0
+for item in collection:
+    total += item.process()
+return total
+```
+___
 
 ## Code Style
 
