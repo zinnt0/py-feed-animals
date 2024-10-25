@@ -1,5 +1,4 @@
 # Сheck Your Code Against the Following Points
-___
 
 ## Make Code Easier
 
@@ -22,7 +21,7 @@ else:
     return "Is not hungry!"
 ```
 
-2. Don't use a `for` loop if you can use or generator expression.
+2. Don't use a `for` loop if you can use generator expression.
 
 Good example:
 
@@ -38,7 +37,6 @@ for item in collection:
     total += item.process()
 return total
 ```
-___
 
 ## Code Style
 
